@@ -1,12 +1,19 @@
-const container=document.getElementById("container");
-console.log("container element ",container);
+// Get the outer container by ID
+const mainContainer = document.getElementById("container");
 
-const listItems = document.getElementsByTagName("li");
-console.log("list items : ",listItems);
+// Get the <h1> element inside the container
+const heading = mainContainer.querySelector("h1");
+console.log("Heading:", heading.textContent);  // DOM Navigation
 
+// Get all <li> items inside the <ul>
+const listItems = mainContainer.querySelectorAll("ul li");
+listItems.forEach((li, index) => {
+  console.log(`List item ${index + 1}:`, li.textContent);
+});
 
-const contentDiv=document.getElementsByClassName("container");
-console.log("content divs ", contentDiv);
+// Access the inner <div class="container">
+const innerContainer = mainContainer.querySelector("div.container");
 
-const welcomeP=document.querySelector("#container .content p" );
-console.log("welcome paragraph",welcomeP);
+// Get the <p> inside the inner container
+const paragraph = innerContainer.querySelector("p");
+console.log("Paragraph:", paragraph.textContent);  // Welcome to our website
