@@ -11,6 +11,6 @@ document.addEventListener("keypress" , function(event){
 });
 
 /** HOVER */
-clickMeB.addEventListener("mouseover" , function(){
+clickMeB.addEventListener("mouseout" , function(){
     console.log("mouse over Button ");
 });
