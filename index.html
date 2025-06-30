@@ -130,9 +130,61 @@
    <!-- <h1>Iterables : </h1>
    <script src="Iterables.js"></script> -->
 
-    <h1> JSON </h1>
-    
-    <script src="JSON.js"></script>
+    <!-- <h1> JSON </h1>
 
+    <script src="JSON.js"></script> -->
+
+    <!-- <h1>HTML DOM Elements </h1>
+
+    <p  id="demo">
+        hello , there 
+    </p>
+    <p  id="changeMe">
+        Click the button to change me 
+    </p>
+    <ul  id="list"> <li> laptop </li> </ul>
+    <button type="button" onclick="change()"> click Me </button> <br><br>
+    <button type="button" onclick="addElement()">  ADD ELEMENT  </button>
+    <script>
+        var element = document.getElementById("demo");
+         console.log(element.innerHTML);
+
+         function change() {
+            document.getElementById("changeMe").innerHTML = "text has been changed ! ";
+            document.getElementById("changeMe").style.color= "green  ";
+         }
+         function addElement() {
+
+            let li =  document.createElement("li");
+            li.textContent = "iphone";
+            document.getElementById("list").appendChild(li);
+            
+         }
+    </script>
+     -->
+
+     <!-- <h1> JQuiry Siblings  - Element Kinship </h1> -->
+
+     <div class="parent">
+        <h2>Parent</h2>
+        <div class="sibling">
+            <h3>Sibling 1 </h3>
+        </div>
+
+        <div class="sibling">
+            <h3>Sibling 2 </h3>
+        </div>
+
+        <div class="sibling">
+            <h3>Sibling 3 </h3>
+        </div>
+
+        <div class="sibling">
+            <h3>Sibling 4</h3>
+        </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="jquery-siblings.js"></script>
 </body>
 </html>

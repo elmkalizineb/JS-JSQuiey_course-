@@ -1,4 +1,22 @@
 
-#dynamicElement{
+/* #dynamicElement{
     transition: background-color 0.5s ease ;
+} */
+
+body{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8e44ad;
+}
+
+.parent , .sibling{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(212, 255, 0);
+    border: 20px solid #fff ;
+    text-align: center;
+    color: #ffff;
 }
