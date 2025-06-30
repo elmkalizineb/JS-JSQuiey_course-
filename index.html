@@ -284,6 +284,20 @@
 
   <script src="filters.js"></script> -->
 
-  
+   <!-- Moving Elements -->
+
+   <div  id="box1" style="width: 100px;height: 100px;background: red;position: relative;"></div>
+   <button id="movebtn1"> Move Right </button>
+   <button id="movebtn2"> Move Left </button>
+
+   <script>
+      $("#movebtn1").click(function(){
+        $("#box1").animate({left:'250px'},6000);
+      });
+
+      $("#movebtn2").click(function(){
+        $("#box1").animate({right:'250px'},6000);
+      });
+   </script>
 </body>
 </html>
