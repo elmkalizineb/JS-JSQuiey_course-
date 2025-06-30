@@ -30,3 +30,4 @@ const couter2 =createCounter();
 couter2(); // Count : 1
 
 
+
