@@ -17,3 +17,4 @@ const innerContainer = mainContainer.querySelector("div.container");
 // Get the <p> inside the inner container
 const paragraph = innerContainer.querySelector("p");
 console.log("Paragraph:", paragraph.textContent);  // Welcome to our website
+
