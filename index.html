@@ -231,8 +231,7 @@
 
      <script src="ajax-load.js"></script> -->
 
-   <div class="container">
-  <h1>AJAX GET and POST Methods</h1>
+   <!-- <div class="container"> <h1>AJAX GET and POST Methods</h1>
 
   <button id="get-data">GET Data</button>
   <div id="get-result"></div>
@@ -242,7 +241,32 @@
 </div>
 
 <script src="get-post.js"></script>
+ -->
 
+ <div class="container">
+    <h1>1. Load Dynamic Content (.load)</h1>
+    <div id="dynamic-content" style="margin-bottom: 10px;"></div>
+    <button id="load-content">Charger un fichier HTML</button>
+  </div>
 
+  <div class="container">
+    <h1>2. AJAX GET Request</h1>
+    <div id="get-result"></div>
+    <button id="get-data">Lancer GET</button>
+  </div>
+
+  <div class="container">
+    <h1>3. AJAX POST Request</h1>
+    <div id="post-result"></div>
+    <button id="post-data">Lancer POST</button>
+  </div>
+
+  <div class="container">
+    <h1>4. jQuery noConflict()</h1>
+    <p id="no-conflict-msg">Message par défaut</p>
+    <button id="conflict-button">Changer ce message</button>
+  </div>
+
+  <script src="noConflict.js"></script>
 </body>
 </html>
